@@ -1,7 +1,7 @@
-export default function Home() {
+export default function Mercury() {
   return (
     <main>
-      <p className="heading-h2">Test</p>
+      <p className="heading-h2">Mercury</p>
     </main>
   );
 }
