@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import Chevron from "../../../assets/icon-chevron.svg";
+import Chevron from "@/assets/icon-chevron.svg";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
