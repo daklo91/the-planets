@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import Chevron from "@/assets/icon-chevron.svg";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -98,7 +97,7 @@ function Header() {
             <div className="w-[20px] h-[20px] rounded-full bg-[#DEF4FC]"></div>
             <div className="mt-[3px]">MERCURY</div>
           </div>
-          <Image src={Chevron} alt="" className="w-[4px] h-[8px] mr-[4px]" />
+          <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
         </Link>
         <Link
           onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
@@ -109,7 +108,7 @@ function Header() {
             <div className="w-[20px] h-[20px] rounded-full bg-[#F7CC7F]"></div>
             <div className="mt-[3px]">VENUS</div>
           </div>
-          <Image src={Chevron} alt="" className="w-[4px] h-[8px] mr-[4px]" />
+          <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
         </Link>
         <Link
           onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
@@ -120,7 +119,7 @@ function Header() {
             <div className="w-[20px] h-[20px] rounded-full bg-[#545BFE]"></div>
             <div className="mt-[3px]">EARTH</div>
           </div>
-          <Image src={Chevron} alt="" className="w-[4px] h-[8px] mr-[4px]" />
+          <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
         </Link>
         <Link
           onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
@@ -131,7 +130,7 @@ function Header() {
             <div className="w-[20px] h-[20px] rounded-full bg-[#FF6A45]"></div>
             <div className="mt-[3px]">MARS</div>
           </div>
-          <Image src={Chevron} alt="" className="w-[4px] h-[8px] mr-[4px]" />
+          <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
         </Link>
         <Link
           onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
@@ -142,7 +141,7 @@ function Header() {
             <div className="w-[20px] h-[20px] rounded-full bg-[#ECAD7A]"></div>
             <div className="mt-[3px]">JUPITER</div>
           </div>
-          <Image src={Chevron} alt="" className="w-[4px] h-[8px] mr-[4px]" />
+          <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
         </Link>
         <Link
           onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
@@ -153,7 +152,7 @@ function Header() {
             <div className="w-[20px] h-[20px] rounded-full bg-[#FCCB6B]"></div>
             <div className="mt-[3px]">SATURN</div>
           </div>
-          <Image src={Chevron} alt="" className="w-[4px] h-[8px] mr-[4px]" />
+          <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
         </Link>
         <Link
           onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
@@ -164,7 +163,7 @@ function Header() {
             <div className="w-[20px] h-[20px] rounded-full bg-[#65F0D5]"></div>
             <div className="mt-[3px]">URANUS</div>
           </div>
-          <Image src={Chevron} alt="" className="w-[4px] h-[8px] mr-[4px]" />
+          <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
         </Link>
         <Link
           onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
@@ -175,7 +174,7 @@ function Header() {
             <div className="w-[20px] h-[20px] rounded-full bg-[#497EFA]"></div>
             <div className="mt-[3px]">NEPTUNE</div>
           </div>
-          <Image src={Chevron} alt="" className="w-[4px] h-[8px] mr-[4px]" />
+          <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
         </Link>
       </nav>
     </>
