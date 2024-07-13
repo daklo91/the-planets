@@ -18,10 +18,12 @@
     "radius": "2,439.7 KM",
     "temperature": "430°c",
     "images": {
-      "planet": "./assets/planet-mercury.svg",
-      "internal": "./assets/planet-mercury-internal.svg",
-      "geology": "./assets/geology-mercury.png"
-    }
+      "planet": "/images/planet-mercury.svg",
+      "internal": "/images/planet-mercury-internal.svg",
+      "geology": "/images/geology-mercury.png"
+    },
+    "sideMenuColor": "#DEF4FC",
+    "UIColor": "#419EBB"
   },
   {
     "name": "Venus",
@@ -42,10 +44,12 @@
     "radius": "6,051.8 KM",
     "temperature": "471°c",
     "images": {
-      "planet": "./assets/planet-venus.svg",
-      "internal": "./assets/planet-venus-internal.svg",
-      "geology": "./assets/geology-venus.png"
-    }
+      "planet": "/images/planet-venus.svg",
+      "internal": "/images/planet-venus-internal.svg",
+      "geology": "/images/geology-venus.png"
+    },
+    "sideMenuColor": "#F7CC7F",
+    "UIColor": "#EDA249"
   },
   {
     "name": "Earth",
@@ -66,10 +70,12 @@
     "radius": "6,371 KM",
     "temperature": "16°c",
     "images": {
-      "planet": "./assets/planet-earth.svg",
-      "internal": "./assets/planet-earth-internal.svg",
-      "geology": "./assets/geology-earth.png"
-    }
+      "planet": "/images/planet-earth.svg",
+      "internal": "/images/planet-earth-internal.svg",
+      "geology": "/images/geology-earth.png"
+    },
+    "sideMenuColor": "#545BFE",
+    "UIColor": "#6D2ED5"
   },
   {
     "name": "Mars",
@@ -90,10 +96,12 @@
     "radius": "3,389.5 KM",
     "temperature": "-28°c",
     "images": {
-      "planet": "./assets/planet-mars.svg",
-      "internal": "./assets/planet-mars-internal.svg",
-      "geology": "./assets/geology-mars.png"
-    }
+      "planet": "/images/planet-mars.svg",
+      "internal": "/images/planet-mars-internal.svg",
+      "geology": "/images/geology-mars.png"
+    },
+    "sideMenuColor": "#FF6A45",
+    "UIColor": "#D14C32"
   },
   {
     "name": "Jupiter",
@@ -114,10 +122,12 @@
     "radius": "69,911 KM",
     "temperature": "-108°c",
     "images": {
-      "planet": "./assets/planet-jupiter.svg",
-      "internal": "./assets/planet-jupiter-internal.svg",
-      "geology": "./assets/geology-jupiter.png"
-    }
+      "planet": "/images/planet-jupiter.svg",
+      "internal": "/images/planet-jupiter-internal.svg",
+      "geology": "/images/geology-jupiter.png"
+    },
+    "sideMenuColor": "#ECAD7A",
+    "UIColor": "#D83A34"
   },
   {
     "name": "Saturn",
@@ -138,10 +148,12 @@
     "radius": "58,232 KM",
     "temperature": "-138°c",
     "images": {
-      "planet": "./assets/planet-saturn.svg",
-      "internal": "./assets/planet-saturn-internal.svg",
-      "geology": "./assets/geology-saturn.png"
-    }
+      "planet": "/images/planet-saturn.svg",
+      "internal": "/images/planet-saturn-internal.svg",
+      "geology": "/images/geology-saturn.png"
+    },
+    "sideMenuColor": "#FCCB6B",
+    "UIColor": "#CD5120"
   },
   {
     "name": "Uranus",
@@ -162,10 +174,12 @@
     "radius": "25,362 KM",
     "temperature": "-195°c",
     "images": {
-      "planet": "./assets/planet-uranus.svg",
-      "internal": "./assets/planet-uranus-internal.svg",
-      "geology": "./assets/geology-uranus.png"
-    }
+      "planet": "/images/planet-uranus.svg",
+      "internal": "/images/planet-uranus-internal.svg",
+      "geology": "/images/geology-uranus.png"
+    },
+    "sideMenuColor": "#65F0D5",
+    "UIColor": "#1EC1A2"
   },
   {
     "name": "Neptune",
@@ -186,9 +200,11 @@
     "radius": "24,622 KM",
     "temperature": "-201°c",
     "images": {
-      "planet": "./assets/planet-neptune.svg",
-      "internal": "./assets/planet-neptune-internal.svg",
-      "geology": "./assets/geology-neptune.png"
-    }
+      "planet": "/images/planet-neptune.svg",
+      "internal": "/images/planet-neptune-internal.svg",
+      "geology": "/images/geology-neptune.png"
+    },
+    "sideMenuColor": "#497EFA",
+    "UIColor": "#2D68F0"
   }
 ]
