@@ -11,7 +11,6 @@ interface PlanetImageProps {
   name: string;
 }
 
-// 582 x 582 i nettside og i design
 export default function PlanetImage({ images, name }: PlanetImageProps) {
   const { view } = usePlanetView();
 
