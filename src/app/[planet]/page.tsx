@@ -22,8 +22,9 @@ export default function PlanetPage({ params }: PlanetPageProps) {
 
   return (
     <PlanetProvider>
-      <main className="flex">
-        <div className="w-1/2">
+      <main>
+        <div className="flex">
+          <div className="w-1/2">
           <PlanetImage images={PLANET_DATA.images} name={PLANET_DATA.name} />
         </div>
         <div className="w-1/2 max-w-[350px]">
@@ -47,6 +48,13 @@ export default function PlanetPage({ params }: PlanetPageProps) {
             </a>
           </p>
           <PlanetButtons />
+        </div>
+        </div>
+        <div>
+          <div>
+            <p className="text-secondary">ROTATION TIME</p>
+            <p className="text-primary">{PLANET_DATA.rotation}</p>
+          </div>
         </div>
       </main>
     </PlanetProvider>
