@@ -28,7 +28,7 @@ export default function PlanetPage({ params }: PlanetPageProps) {
           <PlanetImage images={PLANET_DATA.images} name={PLANET_DATA.name} />
         </div>
         <div className="w-1/2 max-w-[350px]">
-          <h1 className="heading-h1">{PLANET_DATA.name}</h1>
+          <h1 className="heading-h1 uppercase mb-[23px]">{PLANET_DATA.name}</h1>
           <p className="text-primary font-spartan-regular">
             {PLANET_DATA.overview.content}
           </p>
@@ -50,7 +50,11 @@ export default function PlanetPage({ params }: PlanetPageProps) {
           <PlanetButtons />
         </div>
         </div>
-        <div>
+        <div className="flex">
+          <div>
+            <p className="text-secondary">ROTATION TIME</p>
+            <p className="text-primary">{PLANET_DATA.rotation}</p>
+          </div>
           <div>
             <p className="text-secondary">ROTATION TIME</p>
             <p className="text-primary">{PLANET_DATA.rotation}</p>
