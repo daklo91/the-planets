@@ -13,7 +13,7 @@ function Header() {
         <div className="font-antonio-medium text-primary text-[1.75rem] lead-[-1.05px] my-[15px] md:my-[30px] lg:my-0 md:mb-[10px] lg:mb-0">
           THE PLANETS
         </div>
-        <nav className="hidden font-spartan-bold text-primary/75 text-[0.875rem] tracking-[0.063rem] md:flex">
+        <nav className="hidden font-spartan-medium text-primary/75 text-[0.875rem] tracking-[0.063rem] md:flex">
           <Link
             href="/"
             className="block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-mercury/0 hover:border-mercury focus-visible:border-mercury"
