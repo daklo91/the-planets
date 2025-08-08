@@ -4,9 +4,14 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/Mercury",
+        destination: "/mercury/overview",
         permanent: true,
       },
+      {
+        source: "/:planet",
+        destination: "/:planet/overview",
+        permanent: true,
+      }
     ];
   },
 };
