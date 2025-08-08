@@ -1,13 +1,18 @@
 import Link from "next/link";
 
+
+
 export default function NotFound() {
   return (
-    <div>
-      <h2 className="text-primary">Not Found</h2>
-      <p className="text-primary">Could not find requested resource</p>
-      <Link href="/Mercury" className="text-primary underline">
-        Return Home
+    <main className="p-10 text-center">
+      <h1 className="text-3xl font-bold text-primary">404 – Page Not Found</h1>
+
+      <p className="text-secondary mt-4 mb-2">
+        The page you’re looking for doesn’t exist in this solar system.
+      </p>
+      <Link href="/" className="text-primary underline">
+        Go back home
       </Link>
-    </div>
+    </main>
   );
 }
