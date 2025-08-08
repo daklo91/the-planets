@@ -18,7 +18,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   safelist: [
-    ...Object.keys(planetColors).map(color => `bg-${color}`)
+    ...Object.keys(planetColors).map(color => `!bg-${color}`)
   ],
   theme: {
     fontFamily: {
