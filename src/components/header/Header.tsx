@@ -21,43 +21,43 @@ function Header() {
             MERCURY
           </Link>
           <Link
-            href="/venus"
+            href="/venus/overview"
             className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-venus/0 hover:border-venus focus-visible:border-venus"
           >
             VENUS
           </Link>
           <Link
-            href="/earth"
+            href="/earth/overview"
             className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-earth/0 hover:border-earth focus-visible:border-earth"
           >
             EARTH
           </Link>
           <Link
-            href="/mars"
+            href="/mars/overview"
             className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-mars/0 hover:border-mars focus-visible:border-mars"
           >
             MARS
           </Link>
           <Link
-            href="/jupiter"
+            href="/jupiter/overview"
             className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-jupiter/0 hover:border-jupiter focus-visible:border-jupiter"
           >
             JUPITER
           </Link>
           <Link
-            href="/saturn"
+            href="/saturn/overview"
             className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-saturn/0 hover:border-saturn focus-visible:border-saturn"
           >
             SATURN
           </Link>
           <Link
-            href="/uranus"
+            href="/uranus/overview"
             className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-uranus/0 hover:border-uranus focus-visible:border-uranus"
           >
             URANUS
           </Link>
           <Link
-            href="/neptune"
+            href="/neptune/overview"
             className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-neptune/0 hover:border-neptune focus-visible:border-neptune"
           >
             NEPTUNE
