@@ -11,6 +11,14 @@ const spartanBold = localFont({
   src: "../assets/fonts/LeagueSpartan-Bold.ttf",
   variable: "--spartan-bold",
 });
+const spartanSemiBold = localFont({
+  src: "../assets/fonts/LeagueSpartan-SemiBold.ttf",
+  variable: "--spartan-semiBold",
+});
+const spartanMedium = localFont({
+  src: "../assets/fonts/LeagueSpartan-Medium.ttf",
+  variable: "--spartan-medium",
+});
 const spartanRegular = localFont({
   src: "../assets/fonts/LeagueSpartan-Regular.ttf",
   variable: "--spartan-regular",
@@ -30,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body
-        className={`${antonioMedium.variable} ${spartanBold.variable} ${spartanRegular.variable}`}
+        className={`${antonioMedium.variable} ${spartanBold.variable} ${spartanSemiBold.variable} ${spartanMedium.variable} ${spartanRegular.variable}`}
       >
         <Header />
         {children}

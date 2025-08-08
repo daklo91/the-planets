@@ -23,7 +23,9 @@ const config: Config = {
   theme: {
     fontFamily: {
       "spartan-regular": ["var(--spartan-regular), sans-serif"],
+      "spartan-medium": ["var(--spartan-medium), sans-serif"],
       "spartan-bold": ["var(--spartan-bold), sans-serif"],
+      "spartan-semiBold": ["var(--spartan-semiBold), sans-serif"],
       "antonio-medium": ["var(--antonio-medium), sans-serif"],
     },
     colors: {
