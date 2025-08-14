@@ -30,9 +30,6 @@ export default function PlanetPage({ params }: Props) {
     notFound();
   }
 
-  console.log(planet)
-  console.log(view)
-
   return (
     <main>
       <div className="flex max-w-[1086px] justify-between">
