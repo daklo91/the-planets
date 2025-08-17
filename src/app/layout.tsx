@@ -3,26 +3,22 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/header/Header";
 
-const antonioMedium = localFont({
-  src: "../assets/fonts/Antonio-Medium.ttf",
-  variable: "--antonio-medium",
+const spartan = localFont({
+  src: "../assets/fonts/LeagueSpartan-VariableFont_wght.ttf", // your variable font file
+  variable: "--font-spartan",
 });
-const spartanBold = localFont({
-  src: "../assets/fonts/LeagueSpartan-Bold.ttf",
-  variable: "--spartan-bold",
+
+const antonio = localFont({
+  src: [
+    {
+      path: "../assets/fonts/Antonio-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+  variable: "--font-antonio",
 });
-const spartanSemiBold = localFont({
-  src: "../assets/fonts/LeagueSpartan-SemiBold.ttf",
-  variable: "--spartan-semiBold",
-});
-const spartanMedium = localFont({
-  src: "../assets/fonts/LeagueSpartan-Medium.ttf",
-  variable: "--spartan-medium",
-});
-const spartanRegular = localFont({
-  src: "../assets/fonts/LeagueSpartan-Regular.ttf",
-  variable: "--spartan-regular",
-});
+
 
 export const metadata: Metadata = {
   title: "The Planets",
@@ -38,8 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body
-        className={`${antonioMedium.variable} ${spartanBold.variable} ${spartanSemiBold.variable} ${spartanMedium.variable} ${spartanRegular.variable}`}
-      >
+        className={`${spartan.variable} ${antonio.variable}`}      >
         <Header />
         {children}
       </body>

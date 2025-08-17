@@ -42,7 +42,7 @@ export default function PlanetPage({ params }: Props) {
         </div>
         <div className="w-1/2 max-w-[350px]">
           <h1 className="heading-h1 uppercase mb-[23px]">{planetData.name}</h1>
-          <p className="text-primary font-spartan-regular">
+          <p className="text-primary font-spartan font-normal">
             {planetData[lowerCaseView].content}
           </p>
           <p className="text-secondary mt-[49px] mb-[39px]">
