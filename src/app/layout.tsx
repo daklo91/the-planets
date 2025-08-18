@@ -32,9 +32,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-background">
+    <html lang="en" className="bg-background" style={{
+          backgroundImage: `url(/images/background-stars.svg)`,
+        }}>
       <body
-        className={`${spartan.variable} ${antonio.variable}`}      >
+        className={`${spartan.variable} ${antonio.variable}`} >
         <Header />
         {children}
       </body>
