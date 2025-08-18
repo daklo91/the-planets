@@ -1,12 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/*  heading-h1 and heading-2 is "premature-abstraction". Try coding before creating more of these to see if they truly are needed */
-.heading-h1 {
-  @apply text-[2.5rem] sm:text-[3rem] lg:text-[5rem] font-antonio font-medium text-primary;
-}
-
-.heading-h2 {
-  @apply text-[1.25rem] sm:text-[1.5rem] lg:text-[2.5rem] tracking-[-0.75px] sm:tracking-[-0.9px] lg:tracking-[-1.5px] font-antonio font-medium text-primary;
-}
