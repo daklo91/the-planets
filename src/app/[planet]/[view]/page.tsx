@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import planetDataArray from "@/data/data.json";
 import PlanetImage from "./_components/PlanetImage";
 import PlanetViewLinks from "./_components/PlanetViewLinks";
+import PlanetDetailCard from "./_components/PlanetDetailCard";
 
 const VALID_VIEWS = ["overview", "structure", "geology"] as const;
 type ViewKey = typeof VALID_VIEWS[number];
@@ -32,7 +33,7 @@ export default function PlanetPage({ params }: Props) {
 
   return (
     <main>
-      <div className="flex max-w-[1086px] justify-between">
+      <div className="flex max-w-[1086px] justify-between m-auto">
         <div className="w-1/2">
           <PlanetImage
             images={planetData.images}
@@ -61,14 +62,10 @@ export default function PlanetPage({ params }: Props) {
         </div>
       </div>
       <div className="flex">
-        <div>
-          <p className="text-secondary">ROTATION TIME</p>
-          <p className="text-primary">{planetData.rotation}</p>
-        </div>
-        <div>
-          <p className="text-secondary">REVOLUTION TIME</p>
-          <p className="text-primary">{planetData.revolution}</p>
-        </div>
+        <PlanetDetailCard planetStat={planetData.rotation}>ROTATION TIME</PlanetDetailCard>
+        <PlanetDetailCard planetStat={planetData.revolution}>REVOLUTION TIME</PlanetDetailCard>
+        <PlanetDetailCard planetStat={planetData.radius}>RADIUS</PlanetDetailCard>
+        <PlanetDetailCard planetStat={planetData.temperature}>AVERAGE TEMP.</PlanetDetailCard>
       </div>
     </main>
   );
