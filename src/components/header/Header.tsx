@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import HeaderHamburgerToggle from "./HeaderHamburgerToggle";
+import planetDataArray from "@/data/data.json";
 
 function Header() {
 
@@ -11,55 +12,16 @@ function Header() {
         <div className="font-antonio font-medium text-primary text-[1.75rem] lead-[-1.05px] my-[15px] md:my-[30px] lg:my-0 md:mb-[10px] lg:mb-0">
           THE PLANETS
         </div>
-        <nav className="hidden font-spartan font-medium text-primary/75 text-[0.875rem] tracking-[0.063rem] md:flex">
+        <nav className="hidden font-spartan gap-[33px] font-medium text-primary/75 text-[0.875rem] tracking-[0.063rem] md:flex">
+        {planetDataArray.map((planet) => 
           <Link
-            href="/"
-            className="block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-mercury/0 hover:border-mercury focus-visible:border-mercury"
+            key={planet.name}
+            href={`/${planet.name.toLocaleLowerCase()}`}
+            className="uppercase block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary md:border-b-0 md:mb-[4px] hover:md:border-b-4 hover:md:mb-0 lg:!border-b-0 lg:mt-[4px] lg:border-t-0 hover:lg:border-t-4 hover:lg:mt-0"
+            style={{borderColor: planet.UIColor}}
           >
-            MERCURY
-          </Link>
-          <Link
-            href="/venus/overview"
-            className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-venus/0 hover:border-venus focus-visible:border-venus"
-          >
-            VENUS
-          </Link>
-          <Link
-            href="/earth/overview"
-            className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-earth/0 hover:border-earth focus-visible:border-earth"
-          >
-            EARTH
-          </Link>
-          <Link
-            href="/mars/overview"
-            className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-mars/0 hover:border-mars focus-visible:border-mars"
-          >
-            MARS
-          </Link>
-          <Link
-            href="/jupiter/overview"
-            className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-jupiter/0 hover:border-jupiter focus-visible:border-jupiter"
-          >
-            JUPITER
-          </Link>
-          <Link
-            href="/saturn/overview"
-            className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-saturn/0 hover:border-saturn focus-visible:border-saturn"
-          >
-            SATURN
-          </Link>
-          <Link
-            href="/uranus/overview"
-            className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-uranus/0 hover:border-uranus focus-visible:border-uranus"
-          >
-            URANUS
-          </Link>
-          <Link
-            href="/neptune/overview"
-            className="ml-[33px] block pt-[25px] pb-[20px] lg:pb-[25px] hover:text-primary focus-visible:text-primary border-b-4 lg:border-b-0 lg:border-t-4 border-neptune/0 hover:border-neptune focus-visible:border-neptune"
-          >
-            NEPTUNE
-          </Link>
+            {planet.name}
+          </Link>)}
         </nav>
         <HeaderHamburgerToggle>
           <nav className="w-full px-6 top-4 absolute">
