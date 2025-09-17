@@ -25,86 +25,18 @@ function Header() {
         </nav>
         <HeaderHamburgerToggle>
           <nav className="w-full px-6 top-4 absolute">
+            {planetDataArray.map((planet) => 
             <Link
-              href="/"
+              key={planet.name}
+              href={`/${planet.name.toLocaleLowerCase()}`}
               className="flex justify-between items-center border-b-accent border-b py-[20px]"
             >
               <div className="flex gap-[25px] items-center">
-                <div className="w-[20px] h-[20px] rounded-full bg-[#DEF4FC]"></div>
-                <div className="mt-[3px]">MERCURY</div>
+                <div className="w-[20px] h-[20px] rounded-full" style={{backgroundColor: planet.sideMenuColor}}></div>
+                <div className="mt-[3px] uppercase">{planet.name}</div>
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
-            </Link>
-            <Link
-              href="/venus"
-              className="flex justify-between items-center border-b-accent border-b py-[20px]"
-            >
-              <div className="flex gap-[25px] items-center">
-                <div className="w-[20px] h-[20px] rounded-full bg-[#F7CC7F]"></div>
-                <div className="mt-[3px]">VENUS</div>
-              </div>
-              <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
-            </Link>
-            <Link
-              href="/earth"
-              className="flex justify-between items-center border-b-accent border-b py-[20px]"
-            >
-              <div className="flex gap-[25px] items-center">
-                <div className="w-[20px] h-[20px] rounded-full bg-[#545BFE]"></div>
-                <div className="mt-[3px]">EARTH</div>
-              </div>
-              <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
-            </Link>
-            <Link
-              href="/mars"
-              className="flex justify-between items-center border-b-accent border-b py-[20px]"
-            >
-              <div className="flex gap-[25px] items-center">
-                <div className="w-[20px] h-[20px] rounded-full bg-[#FF6A45]"></div>
-                <div className="mt-[3px]">MARS</div>
-              </div>
-              <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
-            </Link>
-            <Link
-              href="/jupiter"
-              className="flex justify-between items-center border-b-accent border-b py-[20px]"
-            >
-              <div className="flex gap-[25px] items-center">
-                <div className="w-[20px] h-[20px] rounded-full bg-[#ECAD7A]"></div>
-                <div className="mt-[3px]">JUPITER</div>
-              </div>
-              <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
-            </Link>
-            <Link
-              href="/saturn"
-              className="flex justify-between items-center border-b-accent border-b py-[20px]"
-            >
-              <div className="flex gap-[25px] items-center">
-                <div className="w-[20px] h-[20px] rounded-full bg-[#FCCB6B]"></div>
-                <div className="mt-[3px]">SATURN</div>
-              </div>
-              <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
-            </Link>
-            <Link
-              href="/uranus"
-              className="flex justify-between items-center border-b-accent border-b py-[20px]"
-            >
-              <div className="flex gap-[25px] items-center">
-                <div className="w-[20px] h-[20px] rounded-full bg-[#65F0D5]"></div>
-                <div className="mt-[3px]">URANUS</div>
-              </div>
-              <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
-            </Link>
-            <Link
-              href="/neptune"
-              className="flex justify-between items-center border-b-accent border-b py-[20px]"
-            >
-              <div className="flex gap-[25px] items-center">
-                <div className="w-[20px] h-[20px] rounded-full bg-[#497EFA]"></div>
-                <div className="mt-[3px]">NEPTUNE</div>
-              </div>
-              <Image width={4} height={8} src="/images/icon-chevron.svg" alt="" />
-            </Link>
+            </Link>)}
           </nav>
         </HeaderHamburgerToggle>
       </header>
