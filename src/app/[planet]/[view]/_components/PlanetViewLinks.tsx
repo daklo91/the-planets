@@ -2,7 +2,7 @@ import Link from "next/link";
 
 interface PlanetViewLinksProps {
   currentPlanet: string,
-  view: string
+  viewParam: string
 }
 
 export default function PlanetViewLinks(props: PlanetViewLinksProps) {
@@ -19,8 +19,8 @@ export default function PlanetViewLinks(props: PlanetViewLinksProps) {
         <Link
           key={view.key}
           href={`/${props.currentPlanet}/${view.key}`}
-          className={`block text-primary py-3 font-spartan font-semibold tracking-[3.2px] text-sm/[25px] border-accent border w-full text-left mb-[16px] hover:bg-hover ${props.view === view.key ? "!bg-" + (props.currentPlanet) : ""}`}
-          style={{cursor : props.view === view.key ? "default" : ""}}
+          className={`block text-primary py-3 font-spartan font-semibold tracking-[3.2px] text-sm/[25px] border-accent border w-full text-left mb-[16px] hover:bg-hover ${props.viewParam === view.key ? "!bg-" + (props.currentPlanet) : ""}`}
+          style={{cursor : props.viewParam === view.key ? "default" : ""}}
         >
           <span className="ml-[28px] mr-[25px] mt-[12px] mb-[11px] text-primary/50">0{index + 1}</span>{view.label}
         </Link>
