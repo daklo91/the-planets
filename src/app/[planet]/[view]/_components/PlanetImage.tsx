@@ -4,11 +4,12 @@ interface PlanetImageProps {
     internal: string;
     geology: string;
   };
+  className?: string,
   name: string;
   view: "overview" | "structure" | "geology";
 }
 
-export default function PlanetImage({ images, name, view }: PlanetImageProps) {
+export default function PlanetImage({ images, name, view, className }: PlanetImageProps) {
   let content;
 
   if (view === "overview") {
@@ -29,7 +30,7 @@ export default function PlanetImage({ images, name, view }: PlanetImageProps) {
   }
 
   return (
-    <div className="w-[582px] h-[582px] flex items-center justify-center relative">
+    <div className={`w-[582px] h-[582px] flex items-center justify-center relative ${className}`}>
       {content}
     </div>
   );

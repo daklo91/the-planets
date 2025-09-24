@@ -3,7 +3,8 @@ import Link from "next/link";
 interface PlanetViewLinksProps {
   currentPlanet: string,
   viewParam: string,
-  UIColor: string
+  UIColor: string,
+  className: string
 }
 
 export default function PlanetViewLinks(props: PlanetViewLinksProps) {
@@ -15,7 +16,7 @@ export default function PlanetViewLinks(props: PlanetViewLinksProps) {
   ];
 
   return (
-    <div>
+    <div className={props.className}>
       {views.map((view, index) => (
         <Link
           key={view.key}
