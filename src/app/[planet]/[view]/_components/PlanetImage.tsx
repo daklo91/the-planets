@@ -35,10 +35,12 @@ export default function PlanetImage({
   }
 
   return (
-    <div
-      className={`max-w-[582px] w-full h-[582px] flex items-center justify-center relative px-[76px] ${className}`}
-    >
-      {content}
+    <div className="w-full">
+      <div
+        className={`px-[75px] lg:px-0 w-full max-w-[582px] h-[582px] flex items-center justify-center relative ${className}`}
+      >
+        {content}
+      </div>
     </div>
   );
 }

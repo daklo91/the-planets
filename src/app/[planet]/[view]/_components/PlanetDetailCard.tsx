@@ -10,7 +10,7 @@ export default function PlanetDetailCard({
   planetStat,
 }: PlanetDetailCardProps) {
   return (
-    <div className="border-accent border-[1px] pt-[19px] pb-[22px] px-[23px] w-[255px] w-full flex justify-between items-center">
+    <div className="border-accent border-[1px] pt-[19px] pb-[22px] px-[23px] w-full lg:flex-col lg:items-start  flex justify-between items-center">
       <p className="text-secondary font-spartan font-semibold text-[14px] leading-[25px] tracking-[1px]">
         {children}
       </p>
