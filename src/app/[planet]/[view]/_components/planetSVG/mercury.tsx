@@ -1,0 +1,111 @@
+import React from "react";
+
+interface PlanetSVGProps {
+  showGuts: boolean;
+}
+
+export default function mercury({ showGuts }: PlanetSVGProps) {
+  const guts: React.CSSProperties = {
+    transform: `scaleX(1)`,
+    transformOrigin: "center",
+    transition: "transform 0.3s",
+    position: "absolute",
+  };
+
+  return (
+    <svg
+      width="582"
+      height="582"
+      viewBox="0 0 582 582"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="Mercury">
+        <g id="1">
+          <g id="Mask">
+            <circle id="path-1" cx="291" cy="291" r="145" fill="#DEF4FC" />
+          </g>
+          <g id="Combined-Shape Clipped">
+            <mask
+              id="mask0_958_2"
+              style={{ maskType: "luminance" }}
+              maskUnits="userSpaceOnUse"
+              x="146"
+              y="146"
+              width="290"
+              height="290"
+            >
+              <circle id="path-1_2" cx="291" cy="291" r="145" fill="white" />
+            </mask>
+            <g mask="url(#mask0_958_2)">
+              <path
+                id="Combined-Shape"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M403 171C403 164.373 397.627 159 391 159H333C326.373 159 321 164.373 321 171C321 177.627 326.373 183 333 183H391C397.627 183 403 177.627 403 171ZM219 279C225.627 279 231 284.373 231 291C231 297.627 225.627 303 219 303H216C209.373 303 204 308.373 204 315C204 321.627 209.373 327 216 327H340C346.627 327 352 321.627 352 315C352 308.373 346.627 303 340 303H288L287.999 302.99C281.604 302.727 276.5 297.46 276.5 291C276.5 284.54 281.604 279.273 287.999 279.01L288 279H290C296.627 279 302 273.627 302 267C302 260.373 296.627 255 290 255H245L245 254.99C238.605 254.728 233.5 249.46 233.5 243C233.5 236.54 238.605 231.272 245 231.01L245 231H265C271.627 231 277 225.627 277 219C277 212.373 271.627 207 265 207H192C185.373 207 180 212.373 180 219C180 225.627 185.373 231 192 231H197C203.627 231 209 236.373 209 243C209 249.627 203.627 255 197 255H148C141.373 255 136 260.373 136 267C136 273.627 141.373 279 148 279H219ZM276 351C282.627 351 288 356.373 288 363C288 369.627 282.627 375 276 375C269.373 375 264 369.627 264 363C264 356.373 269.373 351 276 351ZM398 363C398 356.373 392.627 351 386 351H324C317.373 351 312 356.373 312 363C312 369.627 317.373 375 324 375H386C392.627 375 398 369.627 398 363ZM312 411C312 404.373 306.627 399 300 399H280C273.373 399 268 404.373 268 411C268 417.627 273.373 423 280 423H300C306.627 423 312 417.627 312 411ZM391 303C397.627 303 403 308.373 403 315C403 321.627 397.627 327 391 327C384.373 327 379 321.627 379 315C379 308.373 384.373 303 391 303ZM180 315C180 308.373 174.627 303 168 303H148C141.373 303 136 308.373 136 315C136 321.627 141.373 327 148 327H168C174.627 327 180 321.627 180 315ZM367 207C373.627 207 379 212.373 379 219C379 225.627 373.627 231 367 231H347C340.373 231 335 225.627 335 219C335 212.373 340.373 207 347 207H367Z"
+                fill="#B1D5E2"
+              />
+            </g>
+          </g>
+          <g id="Rectangle Clipped">
+            <mask
+              id="mask1_958_2"
+              style={{ maskType: "luminance" }}
+              maskUnits="userSpaceOnUse"
+              x="146"
+              y="146"
+              width="290"
+              height="290"
+            >
+              <circle id="path-1_3" cx="291" cy="291" r="145" fill="white" />
+            </mask>
+            <g mask="url(#mask1_958_2)">
+              <rect
+                id="Rectangle"
+                opacity="0.0775757"
+                x="292"
+                y="146"
+                width="145"
+                height="290"
+                fill="black"
+              />
+            </g>
+          </g>
+        </g>
+        <g style={showGuts ? guts : undefined} id="Guts">
+          <path
+            id="Mask_2"
+            d="M292 152C368.768 152 431 214.232 431 291C431 367.768 368.768 430 292 430V152Z"
+            fill="#7A939C"
+          />
+          <mask
+            id="mask2_958_2"
+            style={{ maskType: "luminance" }}
+            maskUnits="userSpaceOnUse"
+            x="292"
+            y="152"
+            width="139"
+            height="278"
+          >
+            <path
+              id="Mask_3"
+              d="M292 152C368.768 152 431 214.232 431 291C431 367.768 368.768 430 292 430V152Z"
+              fill="white"
+            />
+          </mask>
+          <g mask="url(#mask2_958_2)">
+            <circle id="Oval" cx="293" cy="292" r="131" fill="#9AB2BB" />
+            <circle id="Oval Copy 9" cx="293" cy="291" r="95" fill="#E8903F" />
+            <circle
+              id="Oval Copy 10"
+              cx="292.5"
+              cy="291.5"
+              r="41.5"
+              fill="#FFEA87"
+            />
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+}

@@ -1,3 +1,6 @@
+import dynamic from "next/dynamic";
+import { ComponentType } from "react";
+
 interface PlanetImageProps {
   images: {
     planet: string;
@@ -9,12 +12,41 @@ interface PlanetImageProps {
   view: "overview" | "structure" | "geology";
 }
 
+type PlanetName =
+  | "mercury"
+  | "venus"
+  | "earth"
+  | "mars"
+  | "jupiter"
+  | "saturn"
+  | "uranus"
+  | "neptune";
+
+interface PlanetSVGProps {
+  showGuts: boolean;
+}
+
+const planetSVGs: Record<PlanetName, ComponentType<PlanetSVGProps>> = {
+  mercury: dynamic<PlanetSVGProps>(() => import("./planetSVG/mercury")),
+  venus: dynamic<PlanetSVGProps>(() => import("./planetSVG/venus")),
+  earth: dynamic<PlanetSVGProps>(() => import("./planetSVG/earth")),
+  mars: dynamic<PlanetSVGProps>(() => import("./planetSVG/mars")),
+  jupiter: dynamic<PlanetSVGProps>(() => import("./planetSVG/jupiter")),
+  saturn: dynamic<PlanetSVGProps>(() => import("./planetSVG/saturn")),
+  uranus: dynamic<PlanetSVGProps>(() => import("./planetSVG/uranus")),
+  neptune: dynamic<PlanetSVGProps>(() => import("./planetSVG/neptune")),
+};
+
 export default function PlanetImage({
   images,
   name,
   view,
   className,
 }: PlanetImageProps) {
+  const lowerCasePlanetName = name.toLowerCase() as PlanetName;
+
+  const PlanetSVG = planetSVGs[lowerCasePlanetName];
+
   let content;
 
   if (view === "overview") {
@@ -34,12 +66,14 @@ export default function PlanetImage({
     );
   }
 
+  const showGutsBoolean = view === "overview" ? false : true;
+
   return (
     <div className="w-full">
       <div
         className={`px-[75px] lg:px-0 w-full max-w-[582px] h-[582px] flex items-center justify-center relative ${className}`}
       >
-        {content}
+        <PlanetSVG showGuts={showGutsBoolean} />
       </div>
     </div>
   );

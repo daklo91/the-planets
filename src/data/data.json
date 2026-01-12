@@ -20,7 +20,8 @@
     "images": {
       "planet": "/images/planet-mercury.svg",
       "internal": "/images/planet-mercury-internal.svg",
-      "geology": "/images/geology-mercury.png"
+      "geology": "/images/geology-mercury.png",
+      "removeImagesFromPlanetsMaybe": ""
     },
     "sideMenuColor": "#DEF4FC",
     "UIColor": "#419EBB"
