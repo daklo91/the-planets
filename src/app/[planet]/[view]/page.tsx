@@ -24,7 +24,7 @@ export default function PlanetPage({ params }: Props) {
   }
 
   const planetData = planetDataArray.find(
-    (p) => p.name.toLowerCase() === planet.toLowerCase()
+    (p) => p.name.toLowerCase() === planet.toLowerCase(),
   );
 
   if (!planetData) {
@@ -34,7 +34,7 @@ export default function PlanetPage({ params }: Props) {
   return (
     <main>
       <div className="max-w-[1086px] m-auto">
-        <div className="grid lg:grid-cols-[582px_minmax(0,1fr)_350px] mb-[87px] sm:mx-10 lg:mx-0">
+        <div className="grid lg:grid-cols-[582px_minmax(0,1fr)_350px] mb-[87px]  lg:mx-0">
           <div className="order-2 lg:row-span-2 lg:col-start-1 md:col-span-2 md:order-none">
             <PlanetImage
               images={planetData.images}

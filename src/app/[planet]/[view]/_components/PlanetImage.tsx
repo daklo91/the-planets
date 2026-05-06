@@ -71,7 +71,7 @@ export default function PlanetImage({
   return (
     <div className="w-full">
       <div
-        className={`px-[75px] lg:px-0 w-full max-w-[582px] h-[582px] flex items-center justify-center relative ${className}`}
+        className={` px-[75px] lg:px-[0px] w-full pt-[39px] md:pt-[54px] pb-[41px] md:pb-[37px] max-w-[520px] lg:max-w-[582px] m-auto flex items-center justify-center relative ${className}`}
       >
         <PlanetSVG showGuts={showGutsBoolean} />
       </div>

@@ -14,8 +14,8 @@ export default function mercury({ showGuts }: PlanetSVGProps) {
 
   return (
     <svg
-      width="582"
-      height="582"
+      width="100%"
+      height="100%"
       viewBox="0 0 582 582"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

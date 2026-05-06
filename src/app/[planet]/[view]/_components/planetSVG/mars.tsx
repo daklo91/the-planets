@@ -10,7 +10,7 @@ export default function mars({ showGuts }: PlanetSVGProps) {
       aria-labelledby="title-id"
       role="img"
       width="100%"
-      height="582"
+      height="100%"
       viewBox="0 0 582 582"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
