@@ -133,10 +133,6 @@ export default function earth({ showGuts }: PlanetSVGProps) {
           fill="black"
         />
       </g>
-      <path
-        d="M291 73C411.398 73 509 170.602 509 291C509 411.398 411.398 509 291 509V73Z"
-        fill="#2A2D80"
-      />
       <mask
         id="mask6_921_142"
         style={{ maskType: "luminance" }}
@@ -147,10 +143,16 @@ export default function earth({ showGuts }: PlanetSVGProps) {
         height="436"
       >
         <path
+          className={showGuts ? "guts-animation" : "guts-animation-closing"}
           d="M291 73C411.398 73 509 170.602 509 291C509 411.398 411.398 509 291 509V73Z"
           fill="white"
         />
       </mask>
+      <path
+        d="M291 73C411.398 73 509 170.602 509 291C509 411.398 411.398 509 291 509V73Z"
+        fill="#2A2D80"
+        className={showGuts ? "guts-animation" : "guts-animation-closing"}
+      />
       <g mask="url(#mask6_921_142)">
         <circle cx="292.5" cy="292.5" r="208.5" fill="#952525" />
         <circle cx="293" cy="291" r="178" fill="#E0592F" />

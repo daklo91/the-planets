@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes scaleOpen {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes scaleClose {
+  0% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+
+.guts-animation {
+  animation: scaleOpen 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+
+.guts-animation-closing {
+  animation: scaleClose 0.4s cubic-bezier(0.4, 0, 1, 1) forwards;
+  transform-origin: left;
+  transform-box: fill-box;
+}

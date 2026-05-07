@@ -18,6 +18,7 @@ export default function PlanetViewLinks(props: PlanetViewLinksProps) {
     <div className={props.className}>
       {views.map((view, index) => (
         <Link
+          scroll={false}
           key={view.key}
           href={`/${props.currentPlanet}/${view.key}`}
           className={
