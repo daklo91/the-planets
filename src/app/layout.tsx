@@ -19,7 +19,6 @@ const antonio = localFont({
   variable: "--font-antonio",
 });
 
-
 export const metadata: Metadata = {
   title: "The Planets",
   description:
@@ -32,11 +31,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-background" style={{
-          backgroundImage: `url(/images/background-stars.svg)`,
-        }}>
-      <body
-        className={`${spartan.variable} ${antonio.variable}`} >
+    <html
+      lang="en"
+      className="bg-background"
+      style={{
+        backgroundImage: `url(/images/background-stars.svg)`,
+      }}
+    >
+      <body className={`${spartan.variable} ${antonio.variable}`}>
         <Header />
         {children}
       </body>
